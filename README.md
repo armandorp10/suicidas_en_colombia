@@ -1,6 +1,6 @@
 # Comportamiento de los suicidios en Colombia - 2015
 
-En Colombia, al igual que en la mayoría de los países del mundo, el volumen de hombres que se quitan la vida es abrumadoramente superior al de las mujeres. En esta visualización se muestra el genero que tiende a suicidarse durante el 2015.
+En Colombia, al igual que en la mayoría de los países del mundo, el volumen de hombres que se quitan la vida es abrumadoramente superior al de las mujeres. En esta visualización se muestra la tendencia de suicidio de los generos en rangos de edades durante el 2015.
 
 # Objetivo del proyecto  
 Sumarizar la tendencia al suicidio de los sexos en un rango de edades  
@@ -14,6 +14,8 @@ Sumarizar la tendencia al suicidio de los sexos en un rango de edades
   - Luego, abrir el index.html con firefox web browser 
   - Alternativa, instalar un servidor web(apache, IIS, etc) y montar el proyecto en este servidor para poder visualizarlo
 
-# Autores con links, y link a la página del proyecto, 
-# Un screenshot, 
-# La licencia MIT.
+# link a la página del proyecto
+
+# Un screenshot 
+
+Made by <a href="https://github.com/armandorp10">Diego Prens Ramos</a>, licensed under MIT
