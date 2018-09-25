@@ -18,5 +18,6 @@ Sumarizar la tendencia al suicidio de los sexos en un rango de edades
   https://armandorp10.github.io/suicidas_en_colombia/
   
 # Un screenshot 
+<img src="/armandorp10/suicidas_en_colombia/blob/master/images/Screenshot.png?raw=true" alt="Screenshot.png">
 
 Made by <a href="https://github.com/armandorp10">Diego Prens Ramos</a>, licensed under MIT
