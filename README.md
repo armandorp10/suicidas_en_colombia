@@ -22,18 +22,17 @@ Identificar el rango de edad donde los sexos tienden al suicidio
 
 # What
 Dataset Type: Table <br>
-Attributes:
-  grupo_de_edad: Categorical
-  hombre_1: Ordered - quantitative 
-  hombre_2: Ordered - quantitative 
-  mujer_1: Ordered - quantitative 
-  mujer_2: Ordered - quantitative 
-  tasa_hombre: Ordered - quantitative 
-  tasa_mujer: Ordered - quantitative 
-  total_1: Ordered - quantitative 
-  total_2: Ordered - quantitative 
-Dataset Availability: static
-
+Attributes: <br>
+  grupo_de_edad: Categorical <br>
+  hombre_1: Ordered - quantitative <br> 
+  hombre_2: Ordered - quantitative <br>
+  mujer_1: Ordered - quantitative <br>
+  mujer_2: Ordered - quantitative <br>
+  tasa_hombre: Ordered - quantitative <br>
+  tasa_mujer: Ordered - quantitative <br>
+  total_1: Ordered - quantitative <br>
+  total_2: Ordered - quantitative <br>
+Dataset Availability: static 
 
 # Why 
 - Identificar el rango de edad donde los sexos tienden al suicidio. (Tamara, Identify - trend )
