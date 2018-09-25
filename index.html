@@ -58,7 +58,7 @@
 		  const line_m = d3.line()
 		    .x( d=> x(d.grupo_de_edad ))
 		    .y( d=> y(d.mujer_2));
-		    
+
   		  // add the Y gridlines
 		  svg.append("g")
 		  	  .attr("transform", `translate(${margin.left},${margin.top})`)			
@@ -122,7 +122,7 @@
 		     .style("stroke", "white")
 		     // Add tooltip
 		     .append("svg:title")
-          	 .text(function(d, i) { return d.hombre_2;})  
+          	 .text(function(d, i) { return (+d.hombre_2).toFixed(2) + "%";})  
 		  
 		  gm.append("path")
 		    .style("stroke", "#ff0aff")
@@ -139,7 +139,7 @@
 		     .style("stroke", "white")
 		     // Add tooltip
 		     .append("svg:title")
-          	 .text(function(d, i) { return d.mujer_2;})
+          	 .text(function(d, i) { return (+d.mujer_2).toFixed(2) + "%";})
 
 		var legend = g.append("g")
 		      .attr("font-family", "sans-serif")
