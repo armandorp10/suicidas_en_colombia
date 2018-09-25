@@ -21,7 +21,7 @@ Identificar el rango de edad donde los sexos tienden al suicidio
 <img src="https://raw.githubusercontent.com/armandorp10/suicidas_en_colombia/master/images/Screenshot.png" alt="Screenshot.png">
 
 # What
-Dataset Type: Table
+Dataset Type: Table <br>
 Attributes:
   grupo_de_edad: Categorical
   hombre_1: Ordered - quantitative 
