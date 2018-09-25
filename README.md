@@ -3,7 +3,7 @@
 En Colombia, al igual que en la mayoría de los países del mundo, el volumen de hombres que se quitan la vida es abrumadoramente superior al de las mujeres. En esta visualización se muestra la tendencia de suicidio de los géneros en rangos de edades durante el 2015.
 
 # Objetivo del proyecto  
-Sumarizar la tendencia al suicidio de los sexos en rango de edades  
+Identificar el rango de edad donde los sexos tienden al suicidio  
 
 # Tecnologías usadas
   - <a href="https://d3js.org/"> D3js V5 </a>
