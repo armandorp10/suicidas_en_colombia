@@ -42,14 +42,14 @@ Dataset Availability: static
 
 # How
 Marks  
-líneas y puntos
+líneas y puntos <br>
 Channels  
-Position-> Vertical  (Atributo ordenado porcentaje hombre y/o mujeres)
-Position-> Horizontal (Atributo categórico rango de edades)
+Position-> Vertical  (Atributo ordenado porcentaje hombre y/o mujeres)<br>
+Position-> Horizontal (Atributo categórico rango de edades)<br>
 Color -> hue (Atributo categórico género masculino y femenino)
 
-Encode Arrange -> Express (porcentaje de hombres y/o mujeres. Position-> Vertical )
-Encode Arrange -> Express (rango de edades. Position-> Horizontal )
+Encode Arrange -> Express (porcentaje de hombres y/o mujeres. Position-> Vertical ) <br>
+Encode Arrange -> Express (rango de edades. Position-> Horizontal ) <br>
 Map -> Color -> Hue (género )
 
 # Insights
