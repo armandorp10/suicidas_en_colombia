@@ -1,0 +1,18 @@
+[{}
+,{"grupo_de_edad":"(10 a 14)","hombre_1":"37","hombre_2":"2.2400000000000002","mujer_1":"33","mujer_2":"7.99","tasa_hombre":"1.69","tasa_mujer":"1.58","tasa_total":"1.63","total_1":"70","total_2":"3.38"}
+,{"grupo_de_edad":"(15 a 17)","hombre_1":"100","hombre_2":"6.04","mujer_1":"49","mujer_2":"11.86","tasa_hombre":"7.53","tasa_mujer":"3.84","tasa_total":"5.72","total_1":"149","total_2":"7.21"}
+,{"grupo_de_edad":"(18 a 19)","hombre_1":"95","hombre_2":"5.74","mujer_1":"29","mujer_2":"7.02","tasa_hombre":"10.67","tasa_mujer":"3.41","tasa_total":"7.12","total_1":"124","total_2":"6"}
+,{"grupo_de_edad":"(20 a 24)","hombre_1":"231","hombre_2":"13.96","mujer_1":"71","mujer_2":"17.190000000000001","tasa_hombre":"10.52","tasa_mujer":"3.39","tasa_total":"7.04","total_1":"302","total_2":"14.6"}
+,{"grupo_de_edad":"(25 a 29)","hombre_1":"191","hombre_2":"11.54","mujer_1":"53","mujer_2":"12.83","tasa_hombre":"9.52","tasa_mujer":"2.71","tasa_total":"6.16","total_1":"244","total_2":"11.8"}
+,{"grupo_de_edad":"(30 a 34)","hombre_1":"148","hombre_2":"8.94","mujer_1":"41","mujer_2":"9.93","tasa_hombre":"8.52","tasa_mujer":"2.27","tasa_total":"5.34","total_1":"189","total_2":"9.14"}
+,{"grupo_de_edad":"(35 a 39)","hombre_1":"145","hombre_2":"8.76","mujer_1":"27","mujer_2":"6.54","tasa_hombre":"9.31","tasa_mujer":"1.64","tasa_total":"5.36","total_1":"172","total_2":"8.32"}
+,{"grupo_de_edad":"(40 a 44)","hombre_1":"100","hombre_2":"6.04","mujer_1":"19","mujer_2":"4.5999999999999996","tasa_hombre":"7.22","tasa_mujer":"1.27","tasa_total":"4.13","total_1":"119","total_2":"5.75"}
+,{"grupo_de_edad":"(45 a 49)","hombre_1":"134","hombre_2":"8.1","mujer_1":"20","mujer_2":"4.84","tasa_hombre":"9.74","tasa_mujer":"1.33","tasa_total":"5.34","total_1":"154","total_2":"7.45"}
+,{"grupo_de_edad":"(50 a 54)","hombre_1":"101","hombre_2":"6.1","mujer_1":"22","mujer_2":"5.33","tasa_hombre":"7.92","tasa_mujer":"1.57","tasa_total":"4.59","total_1":"123","total_2":"5.95"}
+,{"grupo_de_edad":"(55 a 59)","hombre_1":"99","hombre_2":"5.98","mujer_1":"17","mujer_2":"4.12","tasa_hombre":"9.4600000000000009","tasa_mujer":"1.45","tasa_total":"5.23","total_1":"116","total_2":"5.61"}
+,{"grupo_de_edad":"(60 a 64)","hombre_1":"77","hombre_2":"4.6500000000000004","mujer_1":"13","mujer_2":"3.15","tasa_hombre":"9.4700000000000006","tasa_mujer":"1.42","tasa_total":"5.21","total_1":"90","total_2":"4.3499999999999996"}
+,{"grupo_de_edad":"(65 a 69)","hombre_1":"62","hombre_2":"3.75","mujer_1":"8","mujer_2":"1.94","tasa_hombre":"10.18","tasa_mujer":"1.1499999999999999","tasa_total":"5.35","total_1":"70","total_2":"3.38"}
+,{"grupo_de_edad":"(70 a 74)","hombre_1":"50","hombre_2":"3.02","mujer_1":"4","mujer_2":"0.97","tasa_hombre":"11.85","tasa_mujer":"0.79","tasa_total":"5.83","total_1":"54","total_2":"2.61"}
+,{"grupo_de_edad":"(75 a 79)","hombre_1":"33","hombre_2":"1.99","mujer_1":"1","mujer_2":"0.24","tasa_hombre":"11.09","tasa_mujer":"0.26","tasa_total":"4.97","total_1":"34","total_2":"1.64"}
+,{"grupo_de_edad":"(80 y más)","hombre_1":"52","hombre_2":"3.14","mujer_1":"6","mujer_2":"1.45","tasa_hombre":"18.309999999999999","tasa_mujer":"1.48","tasa_total":"8.41","total_1":"58","total_2":"2.8"}
+,{"grupo_de_edad":"Total","hombre_1":"1655","hombre_2":"100","mujer_1":"413","mujer_2":"100","tasa_hombre":"8.5299999999999994","tasa_mujer":"2.04","tasa_total":"5.22","total_1":"2068","total_2":"100"}]

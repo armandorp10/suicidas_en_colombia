@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="js/d3.v5.min.js"></script>
+	<style type="text/css" media="screen">
+		.grid line {
+  			stroke: lightgrey;
+  			stroke-opacity: 0.7;
+  			shape-rendering: crispEdges;
+		}
+
+		.grid path {
+			stroke-width: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>En Colombia, las mujeres tienden a ser m&aacute;s suicidas en su juventud </h1>
+
+	<script type="text/javascript">
+
+		// gridlines in y axis function
+		var make_y_gridlines = y => {		
+		    return d3.axisLeft(y)
+		        .ticks(8)
+		};
+
+		var draw = data => {
+
+		  const margin = {top: 80, right: 180, bottom: 80, left: 180},
+		    width = 1200 - margin.left - margin.right,
+		    height = 500 - margin.top - margin.bottom;
+		  const svg = d3.select("body").append("svg")
+		    .attr("width", width + margin.left + margin.right)
+		    .attr("height", height + margin.top + margin.bottom);
+
+ 		  //console.log(data);
+
+		  const x = d3.scaleBand().rangeRound([0, width]).padding(1),
+			y = d3.scaleLinear().rangeRound([height, 0]);
+
+		  x.domain(data.map( d => d.grupo_de_edad ));
+		  y.domain([0, d3.max(data, d => +d.mujer_2)]);
+		  // Sex Color
+    	  var z = d3.scaleOrdinal()
+			.range(["#ff0aff", "#4084c5"]);
+		  
+
+		  const line = d3.line()
+		    .x( d=> {
+		    	//console.log(x(d.grupo_de_edad ));
+		    	return x(d.grupo_de_edad );
+		    })
+		    .y( d=> y(d.hombre_2));
+
+		  const line_m = d3.line()
+		    .x( d=> x(d.grupo_de_edad ))
+		    .y( d=> y(d.mujer_2));
+		    
+  		  // add the Y gridlines
+		  svg.append("g")
+		  	  .attr("transform", `translate(${margin.left},${margin.top})`)			
+		      .attr("class", "grid")
+		      .call(make_y_gridlines(y)
+		          .tickSize(-width)
+		          .tickFormat("")
+		      );
+		  // Hombres
+		  const g = svg.append("g")
+		    .attr("transform", `translate(${margin.left},${margin.top})`);
+		  // Mujeres
+		  const gm = svg.append("g")
+		    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+
+		  // Add the x Axis
+		  g.append("g")
+		    .call(d3.axisBottom(x))
+		    .attr("transform", `translate(0,${height})`)
+		    .selectAll("text")
+		    .attr("y", 0)
+		    .attr("x", 9)
+		    .attr("dy", ".35em")
+		    .attr("transform", "rotate(45)")
+		    .style("text-anchor", "start");
+
+		  // text label for the x axis
+		  svg.append("text")             
+		      .attr("transform",
+		            "translate(" + (width/2) + " ," + 
+		                           (height + margin.top + 60) + ")")
+		      .style("text-anchor", "middle")
+		      .text("Años");
+		  
+
+		  // Add the y Axis
+		  g.append("g")
+		   .call(d3.axisLeft(y));
+		  // text label for the y axis
+		  svg.append("text")
+		      .attr("transform", "rotate(-90)")
+		      .attr("y", 0 + margin.left -50 )
+		      .attr("x",0 - (height / 2))
+		      .attr("dy", "1em")
+		      .style("text-anchor", "middle")
+		      .text("Porcentaje"); 
+
+		  g.append("path")
+		    .style("stroke", "#4084c5")
+		    .style("fill", "none")
+		    .attr("d", line(data))
+  
+		  g.selectAll("circle")
+		    .data(data).enter()
+		    .append("circle")
+		     .attr("cx", d => x(d.grupo_de_edad))
+		     .attr("cy", d => y(d.hombre_2)) 
+		     .attr("r", 5)
+		     .style("fill", '#4084c5' )
+		     .style("stroke", "white")
+		     // Add tooltip
+		     .append("svg:title")
+          	 .text(function(d, i) { return d.hombre_2;})  
+		  
+		  gm.append("path")
+		    .style("stroke", "#ff0aff")
+		    .style("fill", "none")
+		    .attr("d", line_m(data))
+
+		  gm.selectAll("circle")
+		    .data(data).enter()
+		    .append("circle")
+		     .attr("cx", d => x(d.grupo_de_edad))
+		     .attr("cy", d => y(d.mujer_2)) 
+		     .attr("r", 5)
+		     .style("fill", '#ff0aff' )
+		     .style("stroke", "white")
+		     // Add tooltip
+		     .append("svg:title")
+          	 .text(function(d, i) { return d.mujer_2;})
+
+		var legend = g.append("g")
+		      .attr("font-family", "sans-serif")
+		      .attr("font-size", 10)
+		      .attr("text-anchor", "end")
+		      .selectAll("g")
+		      .data(["Hombres", "Mujeres"].slice().reverse())
+		      .enter().append("g")
+		      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+		legend.append("rect")
+		  .attr("x", width - 19)
+		  .attr("width", 19)
+		  .attr("height", 19)
+		  .attr("fill", z);
+
+		legend.append("text")
+		  .attr("x", width - 24)
+		  .attr("y", 9.5)
+		  .attr("dy", "0.32em")
+		  .text(function(d) { return d; });
+
+		  return svg.node();
+
+		};
+
+		// load data
+		var consulta = d3.json("suicidios.json")
+		.then(
+			resp => {
+				resp.splice(0,1);
+				resp.splice(-1,1);
+				//console.log(r);
+				draw(resp);
+			}, 
+			err => console.log(err)
+		);
+		//console.log(consulta);
+	</script>
+</body>
+</html>
