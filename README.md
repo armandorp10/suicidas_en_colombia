@@ -15,7 +15,8 @@ Sumarizar la tendencia al suicidio de los sexos en un rango de edades
   - Alternativa, instalar un servidor web(apache, IIS, etc) y montar el proyecto en este servidor para poder visualizarlo
 
 # link a la página del proyecto
-
+  https://armandorp10.github.io/suicidas_en_colombia/
+  
 # Un screenshot 
 
 Made by <a href="https://github.com/armandorp10">Diego Prens Ramos</a>, licensed under MIT
