@@ -34,6 +34,7 @@ Attributes:
   total_2: Ordered - quantitative 
 Dataset Availability: static
 
+
 # Why 
 - Identificar el rango de edad donde los sexos tienden al suicidio. (Tamara, Identify - trend )
 - Sumarizar la distribución de los suicidios de los sexos con respecto a rangos de edades. (Tamara, summarize - distribution) 
