@@ -17,7 +17,44 @@ Identificar el rango de edad donde los sexos tienden al suicidio
 # link a la página del proyecto
   https://armandorp10.github.io/suicidas_en_colombia/
   
-# Un screenshot 
+# Screenshot 
 <img src="https://raw.githubusercontent.com/armandorp10/suicidas_en_colombia/master/images/Screenshot.png" alt="Screenshot.png">
+
+# What
+Dataset Type: Table
+Attributes:
+  grupo_de_edad: Categorical
+  hombre_1: Ordered - quantitative 
+  hombre_2: Ordered - quantitative 
+  mujer_1: Ordered - quantitative 
+  mujer_2: Ordered - quantitative 
+  tasa_hombre: Ordered - quantitative 
+  tasa_mujer: Ordered - quantitative 
+  total_1: Ordered - quantitative 
+  total_2: Ordered - quantitative 
+Dataset Availability: static
+
+# Why 
+- Identificar el rango de edad donde los sexos tienden al suicidio. (Tamara, Identify - trend )
+- Sumarizar la distribución de los suicidios de los sexos con respecto a rangos de edades. (Tamara, summarize - distribution) 
+- Localizar las edades donde hay mayor y menor probabilidad de suicido de los sexos (Tamara, locate - extremes) 
+- Comparar la similaridad de las curvas al suicidio de ambos sexos en los rangos de edades (Tamara, Compare - Similarity) 
+
+# How
+Marks  
+líneas y puntos
+Channels  
+Position-> Vertical  (Atributo ordenado porcentaje hombre y/o mujeres)
+Position-> Horizontal (Atributo categórico rango de edades)
+Color -> hue (Atributo categórico género masculino y femenino)
+
+Encode Arrange -> Express (porcentaje de hombres y/o mujeres. Position-> Vertical )
+Encode Arrange -> Express (rango de edades. Position-> Horizontal )
+Map -> Color -> Hue (género )
+
+# Insights
+- Un gran porcentaje de las mujeres tienden a suicidarse en su juventud
+- El hombre tiende a tener una mayor tasa de suicidio al entrar a una edad madura
+
 
 Made by <a href="https://github.com/armandorp10">Diego Prens Ramos</a>, licensed under MIT
